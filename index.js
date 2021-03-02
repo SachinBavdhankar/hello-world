@@ -271,7 +271,7 @@ window.onload = function() {
         var unordered = [] // unordered messages
         var ordered = [] // we're going to order these messages
 
-        for (var i, i = messages.length-10; i < messages.length; i++) {
+        for (var i, i = 0; i < messages.length; i++) {
           // The guide is simply an array from 0 to the messages.length
           guide.push(i+1)
           // unordered is the [message, index_of_the_message]
