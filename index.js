@@ -4,12 +4,14 @@ window.onload = function() {
 
   var firebaseConfig = {
 
-    apiKey: "AIzaSyB3mmZwby5kICxsCarzCe-FuZLTpdbvPWM",
-    authDomain: "chai-katta.firebaseapp.com",
-    projectId: "chai-katta",
-    storageBucket: "chai-katta.appspot.com",
-    messagingSenderId: "19532276286",
-    appId: "1:19532276286:web:b574a0c391a24e0c4ba76f"
+
+    apiKey: "AIzaSyAo4--603CaFCN6tSKm-sxZN17w6Fjml8U",
+    authDomain: "chat-room-d90dc.firebaseapp.com",
+    projectId: "chat-room-d90dc",
+    storageBucket: "chat-room-d90dc.appspot.com",
+    messagingSenderId: "121187239682",
+    appId: "1:121187239682:web:037f47f72d91676221e41b"
+  
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
@@ -40,7 +42,7 @@ window.onload = function() {
 
       var title = document.createElement('h1')
       title.setAttribute('id', 'title')
-      title.textContent = 'Chai Katta '
+      title.textContent = 'Chat room '
 
 
 
