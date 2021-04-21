@@ -154,7 +154,7 @@ window.onload = function() {
 
       var chat_input_send = document.createElement('button')
       chat_input_send.setAttribute('id', 'chat_input_send')
-      chat_input_send.setAttribute('disabled', true)
+      
       chat_input_send.innerHTML = `<i class="far fa-paper-plane"></i>`
 
       var chat_input = document.createElement('input')
@@ -165,10 +165,10 @@ window.onload = function() {
       chat_input.placeholder = `${parent.get_name()}. Say something...`
       chat_input.onkeyup  = function(){
         if(chat_input.value.length > 0){
-          chat_input_send.removeAttribute('disabled')
+          
           chat_input_send.classList.add('enabled')
           chat_input_send.onclick = function(){
-            chat_input_send.setAttribute('disabled', true)
+            
             chat_input_send.classList.remove('enabled')
             if(chat_input.value.length <= 0){
               return
